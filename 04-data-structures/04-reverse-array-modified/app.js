@@ -1,11 +1,12 @@
-// NOT FUNCTIONAL
+function reverseArrayInPlace(x) {
+  for (let i = 0; i < (Math.floor(x.length / 2)); i++) {
+    j = x[i];
+    y = x[x.length - 1 - i];
+    x[i] = y;
+    x[x.length - 1 - i] = j;
+  }
+  console.log(x);
+}
 
-// function reverseArrayInPlace(x) {
-//   for (let i of x) {
-//     x.unshift(i);
-//   }
-//   console.log(x);
-// }
-//
-// z = [1, 2, 3, 4, 5];
-// reverseArrayInPlace(z);
+z = [10, 11, 12, 13, 14, 15];
+reverseArrayInPlace(z);
